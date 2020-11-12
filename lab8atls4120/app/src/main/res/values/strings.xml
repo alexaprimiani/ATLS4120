@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">lab8atls4120</string>
+    <string name="icecream_heading">Ice Cream Maker</string>
+    <string name="radioVanilla">vanilla</string>
+    <string name="radioChocolate">chocolate</string>
+    <string name="radioStrawberry">strawberry</string>
+    <string name="icecreamButton">Create Ice Cream</string>
+    <string name="sprinklesCheck">sprinkles</string>
+    <string name="hotfudgeCheck">hotfudge</string>
+    <string name="caramelCheck">caramel</string>
+    <string name="nutsCheck">nuts</string>
+    <string name="hotFudgeCheck">hot fudge</string>
+    <string name="dairy_free">dairy free</string>
+    <string name="locationButton">Find Ice Cream</string>
+    <string-array name="location">
+        <item>The Hill</item>
+        <item>Baseline</item>
+        <item>Pearl Street</item>
+    </string-array>
+    <string name="title_activity_icecream">Ice Cream Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="feedbackTextView">Feedback</string>
+</resources>
