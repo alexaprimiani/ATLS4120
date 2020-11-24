@@ -1,5 +1,6 @@
 package com.example.lab8atls4120
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
     private var myIcecreamShop = IcecreamShop();
     private var selectedLocationPosition = 0
+    private val REQUEST_CODE = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("icecreamShopName", myIcecreamShop.name)
             intent.putExtra("icecreamShopURL", myIcecreamShop.url)
 
-            startActivity(intent)
+            startActivityForResult(intent, REQUEST_CODE)
         }
     }
 
@@ -68,6 +70,13 @@ class MainActivity : AppCompatActivity() {
 
 
             messageTextView.text = "You'd like $flavor ice cream $toppingList $location"
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if((requestCode == REQUEST_CODE) && (resultCode == Activity.RESULT_OK)){
+            reviewTextView.setText(data?.let{data.getStringExtra("feedback")})
         }
     }
 }

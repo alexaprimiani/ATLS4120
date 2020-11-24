@@ -2,6 +2,7 @@ package com.example.lab8atls4120
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -29,11 +30,25 @@ class IcecreamActivity : AppCompatActivity() {
 
         icecreamShopName?.let {icecreamShopTextView.text = "You should get ice cream at $icecreamShopName"}
 
-        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        findViewById<FloatingActionButton>(R.id.fab).setOnClickListener {
+            loadWebSite()
         }
     }
+
+    fun loadWebSite(){
+        var intent = Intent()
+        intent.action = Intent.ACTION_VIEW
+        intent.data = icecreamShopUrl?.let { Uri.parse(icecreamShopUrl)}
+
+        if (intent.resolveActivity(packageManager) != null){
+            startActivity(intent)
+        }
+        else{
+
+        }
+    }
+
+
 
     override fun onBackPressed(){
         val data = Intent()

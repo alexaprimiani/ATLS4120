@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/root_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools2:context=".MainActivity">
 
         <TextView
@@ -164,11 +164,11 @@
             app2:layout_constraintTop_toBottomOf="@+id/messageTextView" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/reviewTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app2:layout_constraintEnd_toEndOf="parent"
             app2:layout_constraintStart_toStartOf="parent"
             app2:layout_constraintTop_toBottomOf="@+id/locationButton" />
