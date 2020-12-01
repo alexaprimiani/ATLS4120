@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project2emoji</string>
+    <string-array name="eyes">
+        <item>none</item>
+        <item>normal eyes</item>
+        <item>happy eyes</item>
+        <item>winky eyes</item>
+        <item>x eyes</item>
+    </string-array>
+</resources>
