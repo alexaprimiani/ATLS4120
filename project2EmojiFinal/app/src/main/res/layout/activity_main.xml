@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonSunglassesAccessory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="accessorySunglasses"
+        android:text="@string/sunglassesAccessory"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMaskAccessory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonHatAccessory"
+        app:layout_constraintTop_toTopOf="@+id/buttonHatAccessory" />
+
+    <Button
+        android:id="@+id/buttonTongueOutMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="mouthTongueOut"
+        android:text="@string/tongueOutMouth"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSadMouth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMouth" />
+
+    <ImageView
+        android:id="@+id/imageViewFace"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset"
+        app:srcCompat="@drawable/emojiblankface" />
+
+    <ImageView
+        android:id="@+id/imageViewEyes"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset" />
+
+    <ImageView
+        android:id="@+id/imageViewMouth"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset" />
+
+    <ImageView
+        android:id="@+id/imageViewAccessory"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset" />
+
+    <ImageView
+        android:id="@+id/imageViewExtra"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonReset" />
+
+    <Button
+        android:id="@+id/buttonNormalEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:onClick="emojiMaker"
+        android:text="@string/normalEyes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonHappyEyes"
+        app:layout_constraintTop_toTopOf="@+id/buttonHappyEyes" />
+
+    <Button
+        android:id="@+id/buttonHappyEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="eyesHappy"
+        android:text="@string/happyEyes"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNormalEyes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonWinkyEyes"
+        app:layout_constraintTop_toTopOf="@+id/buttonWinkyEyes" />
+
+    <Button
+        android:id="@+id/buttonWinkyEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="eyesWinky"
+        android:text="@string/winkyEyes"
+        app:layout_constraintEnd_toStartOf="@+id/buttonHappyEyes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonDeadEyes"
+        app:layout_constraintTop_toTopOf="@+id/buttonDeadEyes" />
+
+    <Button
+        android:id="@+id/buttonDeadEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="eyesDead"
+        android:text="@string/xEyes2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonWinkyEyes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEyes" />
+
+    <Button
+        android:id="@+id/buttonSmileMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:onClick="mouthSmile"
+        android:text="@string/smileMouth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonOpenMouth"
+        app:layout_constraintTop_toTopOf="@+id/buttonOpenMouth" />
+
+    <Button
+        android:id="@+id/buttonOpenMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mouthOpen"
+        android:text="@string/openMouth"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSmileMouth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSadMouth"
+        app:layout_constraintTop_toTopOf="@+id/buttonSadMouth" />
+
+    <Button
+        android:id="@+id/buttonSadMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="mouthSad"
+        android:text="@string/sadMouth"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOpenMouth"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonTongueOutMouth"
+        app:layout_constraintTop_toTopOf="@+id/buttonTongueOutMouth" />
+
+    <Button
+        android:id="@+id/buttonMaskAccessory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:onClick="accessoryMask"
+        android:text="@string/maskAccessory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSunglassesAccessory"
+        app:layout_constraintTop_toTopOf="@+id/buttonSunglassesAccessory" />
+
+    <Button
+        android:id="@+id/buttonHatAccessory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="accessoryHat"
+        android:text="@string/hatAccessory"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSunglassesAccessory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonGlassesAccessory"
+        app:layout_constraintTop_toTopOf="@+id/buttonGlassesAccessory" />
+
+    <Button
+        android:id="@+id/buttonGlassesAccessory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="accessoryGlasses"
+        android:text="@string/glassesAccessory"
+        app:layout_constraintEnd_toStartOf="@+id/buttonHatAccessory"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccessories" />
+
+    <Button
+        android:id="@+id/buttonCensorBarExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="extraCensorBar"
+        android:text="@string/censorBarExtra"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSmokeExtra"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonZsExtra"
+        app:layout_constraintTop_toTopOf="@+id/buttonZsExtra" />
+
+    <Button
+        android:id="@+id/buttonSmokeExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="extraSmoke"
+        android:text="@string/smokeExtra"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTearExtra"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCensorBarExtra"
+        app:layout_constraintTop_toTopOf="@+id/buttonCensorBarExtra" />
+
+    <Button
+        android:id="@+id/buttonTearExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:onClick="extraTear"
+        android:text="@string/tearExtra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSmokeExtra"
+        app:layout_constraintTop_toTopOf="@+id/buttonSmokeExtra" />
+
+    <Button
+        android:id="@+id/buttonZsExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="extraZs"
+        android:text="@string/zsExtra"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCensorBarExtra"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExtras" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="resetEmoji"
+        android:text="@string/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCensorBarExtra" />
+
+    <TextView
+        android:id="@+id/textViewEyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textViewEyes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textViewMouth"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHappyEyes" />
+
+    <TextView
+        android:id="@+id/textViewAccessories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textViewAccessories"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSadMouth" />
+
+    <TextView
+        android:id="@+id/textViewExtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/textViewExtras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHatAccessory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
